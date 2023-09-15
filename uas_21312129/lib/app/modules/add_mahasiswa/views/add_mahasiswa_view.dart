@@ -41,11 +41,15 @@ class AddmahasiswaView extends GetView<AddmahasiswaController> {
               textInputAction: TextInputAction.next,
               decoration: InputDecoration(labelText: "Alamat"),
             ),
+            SizedBox(
+              height: 10,
+            ),
             ElevatedButton(
               onPressed: () => controller.addmahasiswa(
-                  controller.cNama.text,
-                  controller.cNPM.text,
-                  controller.cAlamat.text,
+                controller.cNama.text,
+                controller.cNPM.text,
+                controller.cAlamat.text,
+              ),
               child: Text("Simpan"),
             )
           ],
